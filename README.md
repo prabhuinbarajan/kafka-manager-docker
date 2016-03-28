@@ -16,3 +16,10 @@ docker run [...] -v /path/to/confdir:/kafka-manager-1.3.0.4/conf [...]
 
 ## Specify a revision
 If you want to upgrade/downgrade this Dockerfile, edit it and set `KM_VERSION` and `KM_REVISION` to fetch the release from github.
+
+
+docker build .
+docker login
+docker tag .... <...>/kafka-manager
+docker push
+
